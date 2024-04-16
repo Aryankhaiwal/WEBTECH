@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>E-Shopping | Online Shopping website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main1.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/logotab.png">
+</head>
+<body>
+  
+    <!--header of page-->
+    <div class="containerheader">
+        <div class="header">
+            <div class="logo">
+                <a href="{{url_for('index1')}}"><img src="images/logo.png" width="125px" alt=""></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="{{url_for('index1')}}" class="headertext">HOME</a></li>
+                    <li><a href="{{url_for('products')}}" class="headertext">PRODUCTS</a></li>
+                </ul>
+            </nav>
+            <div class="headerimage UserAccount">
+              <a href="" class="headertext"><img src="images/user.png" alt="" style="width: 25px;"></a>
+                      <div class="sub-menu-1">
+                        <ul>
+                          <li><a href="#">Edit Your Account</a></li>
+                          <li><a href="{{url_for('logout')}}">Logout</a></li>
+                        </ul>
+                      </div>
+                      
+            </div>
+            <div class="headerimage" style="padding-left: 20px;">
+              <a href="{{url_for('cart')}}" class="headerimage">
+                <div>
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cartname" style="font-weight: bold;">CART</span>
+                </div>
+                <div class="cartcount">
+                  <span>0</span>
+                </div>
+              </a>
+            </div>
+            <i class="menuitem fa fa-bars headerimage" onclick="menutoggle()"></i>
+            
+        </div>
+    </div>
+    <!--header of page end-->
+
+    <!--image slider-->
+    <div class="slidecontainer">
+      <div class="img-slider">
+          <div class="slide active">
+            <img src="images/slide1.png" height =400 alt="">
+          </div>
+          <div class="slide">
+            <img src="images/slide2.png" height = 400 alt="">
+            
+          </div>
+          <div class="slide">
+            <img src="images/slide3.PNG" height = 400 alt="">
+            
+          </div>
+          <div class="slide">
+            <img src="images/slide4.png" height = 400 alt="">
+            
+          </div>
+          <div class="slide">
+            <img src="images/slide5.png" height = 400 alt="">
+            
+          </div>
+          <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+          </div>
+      </div>
+  </div>
+  <!--image slider end-->  
+    
+    <!--New arrivals-->
+    <div class="small-container">
+      <h2 class="title">New Arrivals</h2>
+      <div class="row">
+        <div class="col-3">
+          <img src="images/samsunggalaxyf62(lasergrey,8gbram,128gbstorage).jpg" alt="">
+          <h4>SAMSUNG Galaxy F62 (Laser Grey, 128 GB) (8 GB RAM)</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>₹ 25,999.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/adidaselementrefresh3mrunningsportsshoesformen.jpg" alt="">
+          <h4>Adidas Element Refresh 3 M Running Sports Shoes for Men</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>₹ 5,054.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/huaweiband6fitnesstrackersmartwatchformenwomen,1.47inchamoledcolorscreen.jpg" alt="">
+          <h4>HUAWEI Band 6 Fitness Smartwatch, 1.47''AMOLED Screen</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₹ 5,999.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/nikemenszoomwinflo8runningshoe.jpg" alt="">
+          <h4>Nike Mens Zoom Winflo 8 Running Shoe</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>₹ 8,295.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/rogphone5(12gbram,256gbstorage).jpg" alt="">
+          <h4>Rog Phone 5 (12GB RAM, 256GB Storage)</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₹ 57,999.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/emporioarmanianalogbluedialmenswatch-ar11238.jpg" alt="">
+          <h4>Emporio Armani Analog Blue Dial Men's Watch-AR11238</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₹ 24,495.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Featured Products-->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/newappleiphone12promax(256gb)-gold.jpg" alt="">
+          <h4>New Apple iPhone 12 Pro Max (256GB) - Gold</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>₹ 1,33,990.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/emporioarmanianalogbluedialmenswatch-ar11238.jpg" alt="">
+          <h4>Emporio Armani Analog Blue Dial Men's Watch-AR11238</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₹ 24,495.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/oneplus9r5g(lakeblue,12gbram,256gbstorage).jpg" alt="">
+          <h4>OnePlus 9R 5G (Lake Blue, 12GB RAM, 256GB Storage)</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₹ 43,99.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/huaweiband6fitnesstrackersmartwatchformenwomen,1.47inchamoledcolorscreen.jpg" alt="">
+          <h4>HUAWEI Band 6 Fitness Tracker Smartwatch, 1.47''AMOLED Screen</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₹ 5,999.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-container">
+      <h2 class="title">categories</h2>
+      <div class="row">
+        <div class="col-3 category">
+          <img src="images/newappleiphone12promax(256gb)-gold.jpg" alt="">
+          <h4>MOBILES</h4>
+        </div>
+        <div class="col-3 category">
+          <img src="images/huaweiband6fitnesstrackersmartwatchformenwomen,1.47inchamoledcolorscreen.jpg" alt="">
+          <h4>WATCHES</h4>
+        </div>
+        <div class="col-3 category">
+          <img src="images/adidaselementrefresh3mrunningsportsshoesformen.jpg" alt="">
+          <h4>SHOES</h4>
+        </div>
+      </div>
+    </div>
+
+    <!--About Us-->
+    <div id="about_content">
+      <h2 class="title">About Us</h2>
+      <h3>
+        LAUNCHED IN 2023
+      </h3>
+      <p>
+        Welcome to our e-commerce website! We are a team of passionate individuals dedicated to bringing you the best shopping experience possible.<br><br>
+        Our mission is to provide you with high-quality products at competitive prices, and to make your online shopping experience easy, convenient, and enjoyable.<br><br>
+        At our online store, you will find a wide range of products to choose from, including clothing, electronics, home goods, and more. We work with trusted suppliers to ensure that all of our products meet our high standards of quality and affordability.<br><br>
+        Our team is committed to providing exceptional customer service. If you have any questions or concerns, we are always here to help. Whether you need assistance with placing an order or have a product-related question, we are just a click away.<br><br>
+        We believe that shopping should be fun and stress-free, and that's why we have made it our mission to create an online store that is easy to navigate and user-friendly. We strive to provide you with a seamless shopping experience, from browsing our products to checking out.<br><br>
+        Thank you for choosing us as your go-to online store. We hope you enjoy shopping with us and look forward to serving you for years to come.<br><br>
+      </p>
+  </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <center>
+        <p>Copyright &copy; clickShop.  All Rights Reserved |  Contact Us: +91 12345</p>
+      </center>
+    </div>
+<!--     
+    <script src='js/main.js'></script>
+    <script>
+      var images1 = document.querySelectorAll('.col-3,.col-4');
+      let currentglide = 1;
+
+      images1.forEach((col, i) => {
+        col.addEventListener("click", () => {
+          currentglide = i;
+          if(currentglide==7){
+            currentglide=5;
+          }else if(currentglide==9){
+            currentglide=2;
+          }
+          console.log(currentglide)
+          window.location.href="products.html#pro"+currentglide;
+        });
+      });
+    </script>
+    <script src='js/cart.js'></script> -->
+</body>
+</html>

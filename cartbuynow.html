@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>E-Shopping | Online Shopping website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/signup.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main1.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/products.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/buynow.css'>
+    
+    <link rel="icon" href="/images/logotab.png">
+   
+</head>
+<body onunload="onClickFunc('hi')">
+<div class="page-container">
+    <div class="content-wrap">
+        <!--header of page-->
+        <div class="containerheader" style="padding-bottom: 60px;">
+            <div class="header">
+                <div class="logo">
+                    <a href="/index1.html"><img src="images/logo.png" width="125px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index1.html" class="headertext">HOME</a></li>
+                        <li><a href="products.html" class="headertext">PRODUCTS</a></li>
+                        <li><a href="index1.html#about_content" class="headertext">ABOUT</a></li>
+                    </ul>
+                </nav>
+                <div class="headerimage UserAccount">
+                <a href="" class="headertext"><img src="images/user.png" alt="" style="width: 25px;"></a>
+                        <div class="sub-menu-1">
+                            <ul>
+                            <li><a href="#">Edit Your Account</a></li>
+                            <li><a href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="headerimage" style="padding-left: 20px;">
+                <a href="cart.html" class="headerimage">
+                    <div>
+                        <i class="fa fa-shopping-cart"></i>
+                        <span id="cartname" style="font-weight: bold;">CART</span>
+                    </div>
+                    <div class="cartcount">
+                    <span>0</span>
+                    </div>
+                </a>
+                </div>
+                <i class="menuitem fa fa-bars headerimage" onclick="menutoggle()"></i>
+                
+            </div>
+        </div>
+        <div class="bodycontainer">
+            <div class="detailscontainer">
+                <!--1 Details-->
+                <div class="details">
+                    <div class="headerdetails">
+                        <span>1</span>
+                        <h4>DETAILS</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <form method="POST" id="form">
+                                <div class="form-control">
+                                    <label for="name">Name</label>
+                                    <input type="text" placeholder="ARYAN KHAIWAL " id="name" /><br>
+                                    <!-- <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i> -->
+                                    <small>Error message</small>
+                                </div>
+                                <div class="form-control">
+                                    <label for="phone">Phone</label><br>
+                                    <input type="tel" placeholder="8273581494" id="phoneno" pattern="[6-9]{1}[0-9]{4}[0-9]{5}" required/><br>
+                                    <!-- <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i> -->
+                                    <small>Error message</small>
+                                </div>
+                                <div class="form-control">
+                                    <label for="email">Email</label><br>
+                                    <input type="email" placeholder="Ecommerce@gmail.com" id="email"/><br>
+                                    <!-- <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i> -->
+                                    <small>Error message</small>
+                                </div>
+                                <button id="save">Continue Checkout</button>
+                            </form>
+                        </div>
+                        <div class="col-2 col2text">
+                            <ul>
+                                <li><span>Easily Track Orders, Hassle free Returns</span></li>
+                                <li><span>Get Relevant Alerts and Recommendation</span></li>
+                                <li><span>Get your items shipped in less than 7 days</span></li>
+                                <li><span>Wishlist, Reviews, Ratings and more.</span></li>
+                            </ul>
+                        </div>
+                        <div class="AfterDetails">
+
+                        </div>
+                    </div>
+                </div>
+                <!--1 Details-->
+
+                <!--2 Delivery Address-->
+                <div class="details">
+                    <div class="headerdetails">
+                        <span>2</span>
+                        <h4>DELIVERY ADDRESS</h4>
+                    </div>
+                    <div class="row row1">
+                        <form method="POST" id="form2">
+                            <div class="col-2">
+                            
+                                <div class="form-control">
+                                    <label for="pincode">Pincode</label>
+                                    <input type="text" name="pincode" pattern="[0-9]{6}" placeholder="229304" maxlength="6" id="pincode"><br>
+                                    <!-- <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i> -->
+                                    <small>Error message</small>
+                                    
+                                </div>
+                                <div class="form-control">
+                                    <label for="city">City/District/Town</label>
+                                    <input type="text" name="city" placeholder="Jais" id="city"><br>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <small>Error message</small>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-2 col2text">
+                            
+                                <div class="form-control">
+                                    <label for="locality">Locality</label><br>
+                                    <input type="text" placeholder="RGIPT" id="locality" /><br>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <small>Error message</small>
+                                </div>
+                                <div class="form-control">
+                                    <label for="state">State</label><br>
+                                    <input type="text" placeholder="Uttar Pradesh" id="state" /><br>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <small>Error message</small>
+                                </div>
+                            
+                            </div>
+                            <div class="addresscontainer">
+                                <div class="form-control">
+                                    <label for="address">Address(Area and Street)</label><br>
+                                    <textarea name="address" rows="5" placeholder="Address" id="address"></textarea><br>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <small>Error message</small>
+                                </div>
+                            </div>
+                            <button id="save1">Deliver Here</button>
+                        </form>
+                        <div class="AfterDetails1">
+
+                        </div>
+                    </div>
+                </div>
+                <!--2 Delivery Address-->
+
+                <!--3 Order Summary-->
+                <div class="details">
+                    <div class="headerdetails">
+                        <span>3</span>
+                        <h4>ORDER SUMMARY</h4>
+                    </div>
+                    <div class="row row2">
+                        <div class="products-container">
+                            <div class="productsbuynow">
+                                
+                            </div>
+                        </div>
+                        <div class="AfterDetails2">
+
+                        </div>
+                    </div>
+                </div>
+                <!--3 Order Summary-->
+                <!--4 Payment-->
+                <div class="details">
+                    <div class="headerdetails">
+                        <span>4</span>
+                        <h4>PAYMENT</h4>
+                    </div>
+                    <div class="row row3">
+                        <div class="col-2">
+                            <form method="POST" id="form3">
+                                <div class="form-control form-group owner">
+                                    <label for="owner">Name on Card</label>
+                                    <input type="text" class="form-control" id="owner">
+                                </div>
+                                <div class="form-control form-group CVV">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cvv">
+                                </div>
+                                <div class="form-control form-group" id="card-number-field">
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="text" class="form-control" id="cardNumber">
+                                </div>
+                                <div class="form-control form-group" id="expiration-date">
+                                    <label style="width: 100%;">Expiration Date</label>
+                                    <select>
+                                        <option value="01">January</option>
+                                        <option value="02">February </option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select>
+                                        <option value="22"> 2022</option>
+                                        <option value="23"> 2023</option>
+                                        <option value="24"> 2024</option>
+                                        <option value="25"> 2025</option>
+                                        <option value="26"> 2026</option>
+                                        <option value="27"> 2027</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="pay-now">
+                                    <button type="submit" class="btn btn-default" id="confirm-purchase">Pay Now</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--4 Payment-->
+
+            </div>
+            <div class="pricecontainer">
+                
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer minfooter">
+        <center>
+          <p>Copyright &copy; E-Shopping By Avadhootha Sai Tarun. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
+        </center>
+    </div>
+</div>          
+    <script src='js/main.js'></script>
+    <script src='js/cart.js'></script>
+    <script src='js/cart1.js'></script>
+    <script src='js/cartbuynow.js'></script> 
+    <script src="js/jquery.payform.min.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
+        
+    </body>
+    </html>

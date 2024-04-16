@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shop-Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="icon" href="/images/logotab.png">
+</head>
+<body>
+    <div class="containerheader">
+        <div class="header">
+            <div class="logo">
+                <a href="{{url_for('index')}}"><img src="images/logo.png" width="125px" alt=""></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="{{url_for('index')}}" class="headertext">HOME</a></li>
+                    <li><a href="{{url_for('login')}}" class="headertext">PRODUCTS</a></li>
+                    <li><a href="{{url_for('login')}}" class="headertext">ACCOUNT</a></li>
+                </ul>
+            </nav>
+            <div class="headerimage">
+              <a href="{{url_for('register')}}" class="headerimage">
+                <i class="fa fa-shopping-cart"></i>
+                <span style="font-weight: bold;">CART</span>
+              </a>
+            </div>
+            <!-- <i class="menuitem fa fa-bars headerimage" onclick="menutoggle()"></i> -->
+            <i onclick="menutoggle()"></i>
+            
+        </div>
+    </div>
+    <div class="slidecontainer">
+        <div class="img-slider">
+            <div class="slide active">
+              <img src="images/slide1.png" height = 400 alt="">
+            </div>
+            <div class="slide">
+              <img src="images/slide2.png" height = 400 alt="">
+              
+            </div>
+            <div class="slide">
+              <img src="images/slide3.PNG" height = 400 alt="">
+              
+            </div>
+            <div class="slide">
+              <img src="images/slide4.png" height = 400 alt="">
+              
+            </div>
+            <div class="slide">
+              <img src="images/slide5.png" height = 400 alt="">
+              
+            </div>
+            <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+      <h2 class="title">Available Now</h2>
+      <div class="row">
+        <div class="col-3">
+          <img src="images/samsunggalaxyf62(lasergrey,8gbram,128gbstorage).jpg" alt="">
+          <h4>SAMSUNG Galaxy S20 FE (BLUE, 128 GB) (8 GB RAM)</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 25,999.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/adidaselementrefresh3mrunningsportsshoesformen.jpg" alt="">
+          <h4>Adidas Element Refresh 3 M Running Sports Shoes for Men</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 5,054.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/huaweiband6fitnesstrackersmartwatchformenwomen,1.47inchamoledcolorscreen.jpg" alt="">
+          <h4>HUAWEI Band 6 Fitness Smartwatch, 1.47''AMOLED Screen</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 5,999.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/nikemenszoomwinflo8runningshoe.jpg" alt="">
+          <h4>Nike Mens Zoom Winflo 8 Running Shoe</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 8,295.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/rogphone5(12gbram,256gbstorage).jpg" alt="">
+          <h4>Rog Phone 5 (12GB RAM, 256GB Storage)</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 57,999.00</p>
+        </div>
+        <div class="col-3">
+          <img src="images/emporioarmanianalogbluedialmenswatch-ar11238.jpg" alt="">
+          <h4>Emporio Armani Analog Blue Dial Men's Watch-AR11238</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 24,495.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Featured Products-->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/newappleiphone12promax(256gb)-gold.jpg" alt="">
+          <h4>New Apple iPhone 12 Pro Max (256GB) - Gold</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 1,33,990.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/emporioarmanianalogbluedialmenswatch-ar11238.jpg" alt="">
+          <h4>Emporio Armani Analog Blue Dial Men's Watch-AR11238</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 24,495.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/oneplus9r5g(lakeblue,12gbram,256gbstorage).jpg" alt="">
+          <h4>OnePlus 9R 5G (Lake Blue, 12GB RAM, 256GB Storage)</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 43,99.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/huaweiband6fitnesstrackersmartwatchformenwomen,1.47inchamoledcolorscreen.jpg" alt="">
+          <h4>HUAWEI Band 6 Fitness Tracker Smartwatch, 1.47''AMOLED Screen</h4>
+          <div class="rating">
+          </div>
+          <p>₹ 5,999.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!--About Us-->
+    <div id="about_content">
+        <h2 class="title">About Us</h2>
+        <h3>
+          LAUNCHED IN 2023
+        </h3>
+        <p>
+          Welcome to our e-commerce website! We are a team of passionate individuals dedicated to bringing you the best shopping experience possible.<br><br>
+          Our mission is to provide you with high-quality products at competitive prices, and to make your online shopping experience easy, convenient, and enjoyable.<br><br>
+          At our online store, you will find a wide range of products to choose from, including clothing, electronics, home goods, and more. We work with trusted suppliers to ensure that all of our products meet our high standards of quality and affordability.<br><br>
+          Our team is committed to providing exceptional customer service. If you have any questions or concerns, we are always here to help. Whether you need assistance with placing an order or have a product-related question, we are just a click away.<br><br>
+          We believe that shopping should be fun and stress-free, and that's why we have made it our mission to create an online store that is easy to navigate and user-friendly. We strive to provide you with a seamless shopping experience, from browsing our products to checking out.<br><br>
+          Thank you for choosing us as your go-to online store. We hope you enjoy shopping with us and look forward to serving you for years to come.<br><br>
+        </p>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <center>
+        <p>Copyright &copy; clickShop.  All Rights Reserved |  Contact Us: +91 12345</p>
+      </center>
+    </div>
+    
+    <!-- <script src='js/main.js'></script>
+    <script>
+      var images1 = document.querySelectorAll('.col-3,.col-4');
+      let currentglide = 1;
+
+      images1.forEach((col, i) => {
+        col.addEventListener("click", () => {
+          currentglide = i;
+          console.log(currentglide)
+          window.location.href="signup.html";
+        });
+      });
+    </script> -->
+    <!-- This script defines a function that selects all the elements with the classes "col-3" and "col-4" using the document.querySelectorAll() method. Then, it loops through each of these elements using the forEach() method and attaches a click event listener to each element.
+
+When an element with one of these classes is clicked, the function updates the value of the currentglide variable to the index of the clicked element in the images1 array. It then logs the value of currentglide to the console.
+
+Finally, the function redirects the user to a webpage named "signup.html" using the window.location.href property.
+
+In summary, this function listens for clicks on elements with the "col-3" and "col-4" classes, records the index of the clicked element, logs it to the console, and then redirects the user to a new webpage. -->
+</body>
+</html>

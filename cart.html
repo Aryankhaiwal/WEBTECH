@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>E-Shopping | Online Shopping website</title>
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main1.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/products.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/logotab.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onunload="onClickFunc('hi')">
+<div class="page-container">
+    <div class="content-wrap">
+        <!--header of page-->
+        <div class="containerheader" style="padding-bottom: 60px;">
+            <div class="header">
+                <div class="logo">
+                    <a href="{{url_for('index1')}}"><img src="images/logo.png" width="125px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="{{url_for('index1')}}" class="headertext">HOME</a></li>
+                        <li><a href="{{url_for('products')}}" class="headertext">PRODUCTS</a></li>
+                    </ul>
+                </nav>
+                <div class="headerimage UserAccount">
+                <a href="" class="headertext"><img src="images/user.png" alt="" style="width: 25px;"></a>
+                        <div class="sub-menu-1">
+                            <ul>
+                            <li><a href="#">Edit Your Account</a></li>
+                            <li><a href="{{url_for('index1')}}">Log Out</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="headerimage" style="padding-left: 20px;">
+                <a href="{{url_for('cart')}}" class="headerimage">
+                    <div>
+                        <i class="fa fa-shopping-cart"></i>
+                        <span id="cartname" style="font-weight: bold;">CART</span>
+                    </div>
+                    <div class="cartcount">
+                    <span>0</span>
+                    </div>
+                </a>
+                </div>
+                <i class="menuitem fa fa-bars headerimage" onclick="menutoggle()"></i>
+                
+            </div>
+        </div>
+        <!--header of page end-->
+
+        <div class="products-container">
+            <div class="product-header">
+                <h5 class="product-title cartheader">PRODUCT</h5>
+                <h5 class="price cartheader">PRICE</h5>
+                <h5 class="quantity cartheader">QUANTITY</h5>
+                <h5 class="total cartheader">TOTAL</h5>
+            </div>
+            <div class="products">
+                
+            </div>
+            
+            <div class="placeorder"><button id="placeorder" onclick="directcartbuynow()">PLACE ORDER</button></div>
+            
+            <div class="cartfooter">
+                <p>Want to continue Shopping?</p>
+                <a href="products.html"><p>Click Here</p></a>
+            </div>
+            <div class="cartfooter cartfootershow">
+                <p style="text-align: center;font-size: 50px;padding-bottom: 10px;">&#128533</p>
+                <p>Looks like you don't have anything in your cart.</p>
+                <a href="{{url_for('products')}}"><p>Shop Now</p></a>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer minfooter">
+        <center>
+          <p>Copyright &copy; E-Shopping By Avadhootha Sai Tarun. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
+        </center>
+    </div>
+</div>          
+    <script src='js/main.js'></script>
+    <script src='js/cart.js'></script>
+    <script src='js/cart1.js'></script>
+        
+    </body>
+    </html>

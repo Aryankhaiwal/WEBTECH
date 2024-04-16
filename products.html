@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JAAT CART</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main1.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/products.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/logotab.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--header of page-->
+    <div class="containerheader" style="padding-bottom: 60px;">
+        <div class="header">
+            <div class="logo">
+                <a href="/index1.html"><img src="logo.jpg" width="60px" alt=""></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index1.html" class="headertext">HOME</a></li>
+                    <li><a href="" class="headertext">PRODUCTS</a></li>
+                    <li><a href="index1.html#about_content" class="headertext">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="headerimage UserAccount">
+              <a href="" class="headertext"><img src="images/user.png" alt="" style="width: 25px;"></a>
+                      <div class="sub-menu-1">
+                        <ul>
+                          <li><a href="#">Edit Your Account</a></li>
+                          <li><a href="index.html">Log Out</a></li>
+                        </ul>
+                      </div>
+            </div>
+            <div class="headerimage" style="padding-left: 20px;">
+              <a href="cart.html" class="headerimage">
+                <div>
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cartname" style="font-weight: bold;">CART</span>
+                </div>
+                <div class="cartcount">
+                  <span>0</span>
+                </div>
+              </a>
+            </div>
+            <i class="menuitem fa fa-bars headerimage" onclick="menutoggle()"></i>
+            
+        </div>
+    </div>
+    <!--header of page end-->
+    
+    <!--Products-->
+    <div class="productslistcontainer">
+      <div class="heading" id="Mobiles">
+        <h3>PHONES</h3>
+      </div>
+      <div class="container container1" id="pro10">
+        <div class="image" id="pro6">
+          <div class="imageandcart">
+            <img src="app1.jpeg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart4">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>New Apple iPhone 12 Pro Max </h4>
+            <p>₹ 1,33,990.00</p>
+          </div>
+        </div>
+        <div class="image" id="pro8">
+          <div class="imageandcart">
+            <img src="images/oneplus9r5g(lakeblue,12gbram,256gbstorage).jpg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart5">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>OnePlus 9R 5G</h4>
+            <p>₹ 43,999.00</p>
+          </div>
+        </div>
+        <div class="image" id="pro0">
+          <div class="imageandcart">
+            <img src="app2.jpeg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart6">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Samsung Galaxy F62 (La</h4>
+            <p>₹ 25,999.00</p>
+          </div>
+        </div>
+        <div class="image" id="pro4">
+          <div class="imageandcart">
+            <img src="images/rogphone5(12gbram,256gbstorage).jpg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart6">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Rog Phone 5 (12GB RAM, 256GB Storage)</h4>
+            <p>₹ 57,999.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="heading" id="Watches">
+        <h3>WATCHES</h3>
+      </div>
+      <div class="container container2" id="pro11">
+        <div class="image active">
+          <div class="imageandcart">
+            <img src="wa1.jpeg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart1">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Samsung Galaxy Watch </h4>
+            <p>₹ 16,000.00</p>
+          </div>
+        </div>
+        <div class="image" id="pro5">
+          <div class="imageandcart">
+            <img src="wa2.webp" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart2">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Blue Dial Men's Watch</h4>
+            <p>₹ 24,000.00</p>
+          </div>
+        </div>
+        <div class="image" id="pro2">
+          <div class="imageandcart">
+            <img src="images/huaweiband6fitnesstrackersmartwatchformenwomen,1.47inchamoledcolorscreen.jpg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart3">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Fitness Tracker Smartwatch </h4>
+            <p>₹ 5,999.00</p>
+          </div>
+        </div>
+        <div class="image">
+          <div class="imageandcart">
+            <img src="wa3.jpeg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart3">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Fossil FB-01 Analog Black Dial Men's Watch-FS5836</h4>
+            <p>₹ 10,999.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="heading" id="Shoes">
+        <h3>SHOES</h3>
+      </div>
+      <div class="container container3" id="pro12" style="margin-bottom: 50px;">
+        <div class="image" id="pro3">
+          <div class="imageandcart">
+            <img src="sh1.jpeg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart1">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Nike Mens Running Shoe</h4>
+            <p>₹ 8,000.00</p>
+          </div>
+        </div>
+        <div class="image" id="pro1">
+          <div class="imageandcart">
+            <img src="images/adidaselementrefresh3mrunningsportsshoesformen.jpg" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart2">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>Running Sports Shoes for Men</h4>
+            <p>₹ 5,000.00</p>
+          </div>
+        </div>
+        <div class="image">
+          <div class="imageandcart">
+            <img src="sh3.webp" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart3">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4>o Men's Shoes</h4>
+            <p>₹ 3,000.00</p>
+          </div>
+        </div>
+        <div class="image">
+          <div class="imageandcart">
+            <img src="sh2.webp" alt="tshirt1">
+            <div class="cartoverlay cart-bottom">
+              <a class="add-cart cart3">Add to Cart</a>
+            </div>
+          </div>
+          <div class="imagename">
+            <h4> Unisex Sneakers</h4>
+            <p>₹ 10,000.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="productinfo">
+      <div class="backoption">
+        
+      </div>
+      <div class="slidecontainer">
+        <div class="img-slider">
+            
+        </div>
+      </div>
+    </div>
+    <!--Products-->
+    
+    <!--Footer-->
+    <div class="footer">
+        <center>
+          <p>Copyright &copy; JAAT CART. All Rights Reserved  |  Contact Us: +91 8273581494</p>
+        </center>
+      </div>
+      
+      <script src='js/cart.js'></script>
+      <script src='js/productinfo.js'></script>
+      <script src='js/productinfo1.js'></script>
+      <script src='js/cart1.js'></script>
+      <script src='js/buynow.js'></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

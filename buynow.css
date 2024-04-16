@@ -1,0 +1,368 @@
+body{
+    background: rgb(243, 243, 243);
+}
+.productsbuynow {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bodycontainer{
+    display: flex;
+    justify-content: space-around;
+    min-height: 77vh;
+}
+.detailscontainer{
+    padding-left: 10px;
+}
+.pricecontainer{
+    margin: 10px;
+    width: 300px;
+    display: inline;
+    background: white;
+    height: fit-content;
+}
+.pricecontainer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.pricecontainer div h4{
+    color: gray;
+}
+.pricecontainer div h5{
+    font-size: 17px;
+    font-weight: 500;
+}
+.details {
+    width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    background: white;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.headerdetails {
+    display: flex;
+    padding-left: 30px;
+    padding: 10px;
+    background: dodgerblue;
+}
+.headerdetails span {
+    width: 25px;
+    height: 25px;
+    padding-top: 2px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    color: dodgerblue;
+}
+.headerdetails h4 {
+    padding: 2px;
+    padding-left: 10px;
+    color: white;
+}
+
+.row{
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.row1{
+    display: none;
+}
+.row2{
+    display: none;
+}
+.row3{
+    display: none;
+}
+
+.row ul {
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.bodycontainer li {
+    padding: 10px;
+    text-align: center;
+}
+.form-control {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.form-control label{
+    padding: 0px 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+.form-control input{
+    margin: -5px 5px;
+    padding: 5px;
+    margin-top: 0px;
+}
+#form .form-control i {
+    top: 32.5px;
+    right: -25px;
+    font-size: 15px;
+}
+#form2 .form-control i {
+    top: 32.5px;
+    right: 0px;
+    font-size: 15px;
+}
+button{
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: orange;
+    color: white;
+    border: 0px;
+}
+.form-control small {
+    padding-left: 5px;
+}
+.AfterDetails{
+    display: flex;
+}
+.AfterDetails1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.AfterDetails2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.AfterDetails2 span{
+    margin: auto;
+    margin-left: 5%;
+    padding: 10px;
+}
+.AfterDetails p{
+    font-weight: 500;
+    margin: 5px;
+    padding: 10px 5px;
+}
+.AfterDetails2 button{
+    margin: 20px;
+    margin-right: 5%;
+}
+.AfterDetails button, .AfterDetails1 button, .AfterDetails2 button{
+    background: rgb(255, 255, 255);
+    color: dodgerblue;
+    border: 1.5px solid lightgrey;
+}
+.AfterDetails1 span{
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.AfterDetails span{
+    margin: 5px;
+    padding: 10px 5px;
+}
+#form2 {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+#form2 .col-2{
+    flex-basis: 50%;
+    padding: 0px 10px;
+}
+.addresscontainer{
+    margin: auto;
+    width: 100%;
+    padding: 0px 10px;
+}
+textarea{
+    padding: 5px;
+    margin: 5px;
+    margin-top: 0px;
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+}
+.products-container {
+    max-width: 800px;
+    padding-bottom: 0px;
+    margin-top: 00px;
+}
+#changedetails{
+    display: block;
+    margin: 0 auto;
+}
+.basketTotalContainer{
+    width: 300px;
+    padding: 10px 0;
+    padding-top: 23px;
+    margin-left: 50px;
+}
+.basketTotalTitle {
+    width: 30%;
+}
+.basketTotal {
+    width: 40%;
+}
+#save2{
+    display: block;
+    margin-top: 15px;
+    margin-left: 30%;
+}
+#form3{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.owner{
+    width: 50%;
+    padding: 10px;
+}
+.CVV{
+    width: 50%;
+    padding: 10px;
+}
+.row3 .col-2{
+    width: 50%;
+}
+#card-number-field{
+    width: 100%;
+    padding: 10px;
+}
+#expiration-date{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#form3 button{
+    margin: 0 15px;
+}
+.form-control select{
+    margin: 5px;
+    margin-top: 0px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+    width: 45%;
+}
+.amountpayable{
+    margin:0 15px;
+    padding:15px 0;
+    border-top: 1px dotted lightgrey;
+}
+.logo{
+    padding: 0px;
+}
+@media only screen and (max-width: 1050px) {
+    .bodycontainer{
+        display: block;
+    }
+    .amountpayable{
+        margin: 0;
+    }
+    .pricecontainer div{
+        width: 800px;
+        background: white;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .pricecontainer div{
+        width: 90%;
+        background: white;
+    }
+    .detailscontainer{
+        width: 100%;
+        padding: 0px;
+    }
+    .details{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .bodycontainer{
+        padding-bottom: 30px;
+    }
+    .AfterDetails div{
+        font-size: 70%;
+        flex-wrap: wrap;
+        flex-basis: 30%;
+    }
+    .row3 .col-2 {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 384px) {
+    #form2 .col-2 input{
+        width: 140px;
+    }
+    #form3 .form-control{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .productsbuynow{
+        width: 95%;
+        overflow: hidden;
+        font-size: 50%;
+    }
+    .product img{
+        width: 30px;
+        height: 30px;
+    }
+    .price{
+        padding-left: 0px;
+    }
+    .productsbuynow i{
+        font-size: 10px;
+    }
+    .product-header{
+        width: 95%;
+        overflow: hidden;
+    }
+    .product-header {
+        font-size: 50%;
+    }
+    .quantity{
+        padding-left: 0px;
+    }
+    .total{
+        padding-left: 15px;
+    }
+    
+    .product-header .price{
+        padding-left: 5px;
+    }
+    
+    .product-header .quantity{
+        padding-left: 10px;
+    }
+    
+    .product-header .total{
+        padding-left: 20px;
+    }
+
+    .basketTotalContainer {
+        width: 95%;
+        padding: 25px 0;
+    }
+    .minfooter {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;            /* Footer height */
+      }
+  }
